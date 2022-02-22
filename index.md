@@ -10,7 +10,7 @@ Un titre et un résumé en anglais qui reprennent le titre et le résumé en fra
 
 |(´・ω・｀)| ( ͡° ͜ʖ ͡°) | ಠ_ಠ | ᕕ( ᐛ )ᕗ |
 |-----|--|--|--|
-| A. Chambolle-Solaz| J. Doe | A. Onyme  | N. Nescio  |
+| A. Chambolle-Solaz| J. Doe | Eliot Goarin  | N. Nescio  |
 
 
 ## Description synthétique du projet
