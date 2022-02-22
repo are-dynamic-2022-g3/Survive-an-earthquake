@@ -32,7 +32,7 @@ Présentation du choix de modélisation, des outils, du code et des résultats (
 ## Lien vers page de blog : <a href="blog.html"> C'est ici ! </a>
 
 ## Bibliographie :
-### lien vers site interresant comparant deux communautees et les degats faits par tremblement de terre a chacune
+#### lien vers site interresant comparant deux communautees et les degats faits par tremblement de terre a chacune :
 https://www.sciencedirect.com/science/article/pii/S0143622817310639#tbl3
 
 **Carte mentale de vos mots-clés, en utilisant** <a href="https://framindmap.org/mindmaps/index.html">Framindmap </a> 
