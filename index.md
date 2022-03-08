@@ -35,6 +35,8 @@ https://www.sciencedirect.com/science/article/pii/S0143622817310639#tbl3
 
 https://www.sciencedirect.com/science/article/pii/S2352146514000866?via%3Dihub
 
+https://pluto.huji.ac.il/%7Emsdfels/wpapers/Big%20Data%20Dynamic%20AB%20simulation.pdf
+
 **Carte mentale de vos mots-clés, en utilisant** <a href="https://framindmap.org/mindmaps/index.html">Framindmap </a> 
 
 Liste de l'ensemble des ressources bibliographiques utilisées pour vos travaux. **<= Indiquez le canal utilisé pour les trouver (Google Scholar, sources wikipedia, ressources en ligne SU, ...)**
