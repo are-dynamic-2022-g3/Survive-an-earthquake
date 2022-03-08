@@ -6,7 +6,7 @@
 
 ## Présentation de l'équipe
 
-|(´・ω・｀)| ( ͡° ͜ʖ ͡°) | ಠ_ಠ | ¯\\_(ツ)_/¯ |
+|(´・ω・｀)| ( ͡° ͜ʖ ͡°) | ಠ_ಠ | ¯\\__(ツ)__/¯ |
 |-----|--|--|--|
 | A. Chambolle-Solaz| J. Doe | Eliot Goarin  | Gaëtan Kosciuszko  |
 
