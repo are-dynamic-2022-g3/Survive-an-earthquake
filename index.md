@@ -8,9 +8,9 @@ Un titre et un résumé en anglais qui reprennent le titre et le résumé en fra
 
 ## Présentation de l'équipe
 
-|(´・ω・｀)| ( ͡° ͜ʖ ͡°) | ಠ_ಠ | ᕕ( ᐛ )ᕗ |
+|(´・ω・｀)| ( ͡° ͜ʖ ͡°) | ಠ_ಠ | ¯\_(ツ)_/¯ |
 |-----|--|--|--|
-| A. Chambolle-Solaz| J. Doe | Eliot Goarin  | N. Nescio  |
+| A. Chambolle-Solaz| J. Doe | Eliot Goarin  | Gaëtan Kosciuszko  |
 
 
 ## Description synthétique du projet
