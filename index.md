@@ -1,8 +1,6 @@
-# Nom du projet
+# Survive an earthquake :
 
 Résumé de quelques lignes présentant l'objectif de votre projet, la méthode que vous avez suivie pour le réaliser et les résultats marquants que vous avez obtenus.
-
-## English version
 
 Un titre et un résumé en anglais qui reprennent le titre et le résumé en français, mais en anglais pour attirer une audience internationale sur vos travaux !
 
@@ -34,6 +32,8 @@ Présentation du choix de modélisation, des outils, du code et des résultats (
 ## Bibliographie :
 #### lien vers site interresant comparant deux communautees et les degats faits par tremblement de terre a chacune :
 https://www.sciencedirect.com/science/article/pii/S0143622817310639#tbl3
+
+https://www.sciencedirect.com/science/article/pii/S2352146514000866?via%3Dihub
 
 **Carte mentale de vos mots-clés, en utilisant** <a href="https://framindmap.org/mindmaps/index.html">Framindmap </a> 
 
