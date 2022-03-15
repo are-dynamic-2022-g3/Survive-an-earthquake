@@ -8,7 +8,7 @@
 
 |(´・ω・｀)| ( ͡° ͜ʖ ͡°) | ಠ_ಠ | ¯\\__(ツ)__/¯ |
 |-----|--|--|--|
-| A. Chambolle-Solaz| J. Doe | Eliot Goarin  | Gaëtan Kosciuszko  |
+| A. Chambolle-Solaz| G. Cai | E. Goarin  | G. Kosciuszko  |
 
 
 ## Description synthétique du projet
