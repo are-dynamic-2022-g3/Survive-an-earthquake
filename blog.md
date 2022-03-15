@@ -7,8 +7,8 @@ la plupart des travaux que nous avons pu trouver traitaient des réactions des p
 Ainsi un travail approfondi sur nos sources est nécessaire lors de la deuxième semaine du projet.
 tchaoh les asticots !
 ### Semaine 2
-skuuuuuuu les gens, re. Ajd on a finalisé notre boulot sur nos sources et on a commencé à vraiment voir la structure que prendrait nos modèles. Ça aide à visualiser le travail qui reste à faire t'as vu. Allé, à la semaine pro les kheys.
+Cette semaine nous avons fait la bibliographie de notre projet. Après avoir trouver un article à l'aide de mots clés, nous nous mettons d'accord sur le fait d'intégrer cette source à notre bibliographie ou non. C'est un processus de sélection au sein du groupe et d'analyse des sources afin qu'elles soient en accord à notre plan. De plus, nous avons aussi alimenter/mis à jour les pages du Github nécessaires au développement du projet.
 ### Semaine 3
 ### ...
 
-<a href="index.html"> Retour à la page principale </a>
+[Retour à la page principale](https://github.com/are-dynamic-2022-g3/Survive-an-earthquake)
