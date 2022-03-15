@@ -17,7 +17,7 @@
 
 **Hypothèse principale : L'age et le niveau de richesse sont les facteurs les plus importants dans l'augmentation des chances de survie d'un individu lors d'un tremblement de terre en milieu urbain**
 
-**Hypothèses secondaires : ** 
+**Hypothèses secondaires :** 
 
 **Objectifs :**
 
