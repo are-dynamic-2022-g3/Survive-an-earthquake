@@ -31,11 +31,11 @@ Présentation du choix de modélisation, des outils, du code et des résultats (
 
 ## Bibliographie :
 #### lien vers site interresant comparant deux communautees et les degats faits par tremblement de terre a chacune :
-[Open spaces and risk perception in post-earthquake Kathmandu city](https://www.sciencedirect.com/science/article/pii/S0143622817310639#tbl3)
+[Open spaces and risk perception in post-earthquake Kathmandu city](https://www.sciencedirect.com/science/article/pii/S0143622817310639#tbl3) : WebOfScience
 
-[An Agent-based Model for Earthquake Pedestrians’ Evacuation Simulation in Urban Scenarios](https://www.sciencedirect.com/science/article/pii/S2352146514000866?via%3Dihub)
+[An Agent-based Model for Earthquake Pedestrians’ Evacuation Simulation in Urban Scenarios](https://www.sciencedirect.com/science/article/pii/S2352146514000866?via%3Dihub) : WebOfScience
 
-[Dynamic Agent Based Simulation of an Urban Disaster Using Synthetic Big Data](https://pluto.huji.ac.il/%7Emsdfels/wpapers/Big%20Data%20Dynamic%20AB%20simulation.pdf)
+[Dynamic Agent Based Simulation of an Urban Disaster Using Synthetic Big Data](https://pluto.huji.ac.il/%7Emsdfels/wpapers/Big%20Data%20Dynamic%20AB%20simulation.pdf) : WebOfScience
 
 **Carte mentale de vos mots-clés, en utilisant** <a href="https://framindmap.org/mindmaps/index.html">Framindmap </a> 
 
