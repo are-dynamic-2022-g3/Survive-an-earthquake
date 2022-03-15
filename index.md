@@ -37,6 +37,12 @@ Présentation du choix de modélisation, des outils, du code et des résultats (
 
 [Dynamic Agent Based Simulation of an Urban Disaster Using Synthetic Big Data](https://pluto.huji.ac.il/%7Emsdfels/wpapers/Big%20Data%20Dynamic%20AB%20simulation.pdf) : WebOfScience
 
+[Administration, United States Federal Housing, et Homer Hoyt. The Structure and Growth of Residential Neighborhoods in American Cities. U.S. Government Printing Office, 1939.](https://books.google.fr/books?hl=fr&lr=&id=VtjZdGSOWhgC&oi=fnd&pg=PR1&dq=The+Structure+and+Growth+of+Residential+Neighborhoods+in+American+Cities+Washington+pdf&ots=QY2xJNzBsQ&sig=DRQAgnvcItzTXifIIga2m0HOV1o#v=onepage&q&f=false)
+
+[Harris, Chauncy D., et Edward L. Ullman. « The Nature of Cities ». The Annals of the American Academy of Political and Social Science, vol. 242, 1945, p. 7‑17. JSTOR](https://www.jstor.org/stable/1026055.)
+
+[Park, Robert E., et Ernest W. Burgess. The City. University of Chicago Press, 2012.](https://shora.tabriz.ir/Uploads/83/cms/user/File/657/E_Book/Urban%20Studies/park%20burgess%20the%20city.pdf)
+
 **Carte mentale de vos mots-clés, en utilisant** <a href="https://framindmap.org/mindmaps/index.html">Framindmap </a> 
 
 Liste de l'ensemble des ressources bibliographiques utilisées pour vos travaux. **<= Indiquez le canal utilisé pour les trouver (Google Scholar, sources wikipedia, ressources en ligne SU, ...)**
