@@ -31,11 +31,11 @@ Présentation du choix de modélisation, des outils, du code et des résultats (
 
 ## Bibliographie :
 #### lien vers site interresant comparant deux communautees et les degats faits par tremblement de terre a chacune :
-https://www.sciencedirect.com/science/article/pii/S0143622817310639#tbl3
+[bibli1](https://www.sciencedirect.com/science/article/pii/S0143622817310639#tbl3)
 
-https://www.sciencedirect.com/science/article/pii/S2352146514000866?via%3Dihub
+[bibli2](https://www.sciencedirect.com/science/article/pii/S2352146514000866?via%3Dihub)
 
-https://pluto.huji.ac.il/%7Emsdfels/wpapers/Big%20Data%20Dynamic%20AB%20simulation.pdf
+[bibli3](https://pluto.huji.ac.il/%7Emsdfels/wpapers/Big%20Data%20Dynamic%20AB%20simulation.pdf)
 
 **Carte mentale de vos mots-clés, en utilisant** <a href="https://framindmap.org/mindmaps/index.html">Framindmap </a> 
 
