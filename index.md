@@ -27,7 +27,7 @@
 
 Présentation du choix de modélisation, des outils, du code et des résultats (tableaux, courbes, animations...) (**avec une analyse critique**).
 
-## Lien vers page de blog : <a href="blog.html"> C'est ici ! <https://github.com/are-dynamic-2022-g3/Survive-an-earthquake/edit/main/blog.md/a>
+## Lien vers page de blog : <a href="blog.html"> C'est ici ! </a https://github.com/are-dynamic-2022-g3/Survive-an-earthquake/edit/main/blog.md>
 
 ## Bibliographie :
 #### lien vers site interresant comparant deux communautees et les degats faits par tremblement de terre a chacune :
