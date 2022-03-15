@@ -30,7 +30,7 @@ Présentation du choix de modélisation, des outils, du code et des résultats (
 ## Lien vers page de blog : [C'est ici !](https://github.com/are-dynamic-2022-g3/Survive-an-earthquake/blob/main/blog.md)
 
 ## Bibliographie :
-#### lien vers site interresant comparant deux communautees et les degats faits par tremblement de terre a chacune :
+
 [Open spaces and risk perception in post-earthquake Kathmandu city](https://www.sciencedirect.com/science/article/pii/S0143622817310639#tbl3) : WebOfScience
 
 [An Agent-based Model for Earthquake Pedestrians’ Evacuation Simulation in Urban Scenarios](https://www.sciencedirect.com/science/article/pii/S2352146514000866?via%3Dihub) : WebOfScience
