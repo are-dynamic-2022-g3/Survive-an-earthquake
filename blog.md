@@ -9,6 +9,8 @@ tchaoh les asticots !
 ### Semaine 2
 Cette semaine nous avons fait la bibliographie de notre projet. Après avoir trouver un article à l'aide de mots clés, nous nous mettons d'accord sur le fait d'intégrer cette source à notre bibliographie ou non. C'est un processus de sélection au sein du groupe et d'analyse des sources afin qu'elles soient en accord à notre plan. De plus, nous avons aussi alimenter/mis à jour les pages du Github nécessaires au développement du projet.
 ### Semaine 3
+![image](https://user-images.githubusercontent.com/99738357/159501941-6a3ee88c-b431-4980-9e27-a6dc19d5cb0e.png)
+
 ### ...
 
 [Retour à la page principale](https://github.com/are-dynamic-2022-g3/Survive-an-earthquake)
