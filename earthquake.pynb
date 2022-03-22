@@ -1,1 +1,67 @@
+import numpy as np
+import random as rd
+import matplotlib.pyplot as plt
+
+n = 100
+m = 100
+Mage = np.zeros((n,m), dtype=int) #Matrice de l'age des différentes structures (plus vieux plus on s'éloigne du centre)
+Mheight = np.zeros((n,m), dtype=int) #Hauteur des constructions 0 pour les routes et 6 à 120(nb de dizaines de m)
+# 0 routes, 6-12m pour les maisons, 12-20m pour les immeubles, 30-120m pour les grattes ciels
+MCity = np.zeros((n,m), dtype=int) #Matrice de la ville, 1=route, 2/3/4=batiments (maisons, immeuble), 5=zones de refuges, 6=zones de transport
+MGround = np.zeros((n,m), dtype=int) #Matrice du sol
+
+def cityground(matrice):
+    grid = np.zeros((len(matrice),len(matrice)), dtype=np.int)
+    x = rd.randint(0,len(matrice))
+    y = rd.randint(0,len(matrice))
+    M = (x,y)
+    
+    #circles = {'c1':[[M[0],M[1]],10],'c2':[[M[0],M[1]],25],'c3':[[M[0],M[1]],40]}
+    
+    circles = {}
+    for i in range(10):
+        circles[i] = [[M[0],M[1]],i*10]
+    print(circles[0])
+    
+    xx = np.arange(grid.shape[0])
+    yy = np.arange(grid.shape[1])
+    for val in circles.values():
+        radius = val[1]
+        inside = (xx[:, None] - val[0][0])**2 + (yy - val[0][1])**2 <= radius**2
+        grid += grid | inside
+    print(grid)
+    plt.imshow(grid)
+    plt.show()
+    return "a"
+
+cityground(MGround)
+
+"""
+import matplotlib.pyplot as plt
+
+n=100
+m=100
+grid = np.zeros((n,m), dtype=np.bool)
+square_length = 0.5
+M = (n//2,m//2)
+print(M)
+circles = {'c1':[[M[0],M[1]],1.5]}
+
+# Generate arrays of indices/coordiates so we can do the
+# calculations the Numpy way, without resorting to loops
+# I always get the index order wrong so double check...
+xx = np.arange(grid.shape[0])
+yy = np.arange(grid.shape[1])
+
+for val in circles.values():
+radius = val[1]
+# same index caveat here
+# Calling Mr Pythagoras: Find the pixels that lie inside this circle
+inside = (xx[:, None] - val[0][0])**2 + (yy - val[0][1])**2 <= radius**2
+
+# do grid & inside and initialize grid with ones for intersection instead of union
+grid = grid | inside
+
+plt.imshow(grid)
+plt.show()"""
 
