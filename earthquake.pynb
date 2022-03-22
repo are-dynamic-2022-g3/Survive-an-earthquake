@@ -2,20 +2,46 @@ import numpy as np
 import random as rd
 import matplotlib.pyplot as plt
 
-n = 40
-m = 40
+n = 20
+m = 20
 Mage = np.zeros((n,m), dtype=int) #Matrice de l'age des différentes structures (plus vieux plus on s'éloigne du centre)
 Mheight = np.zeros((n,m), dtype=int) #Hauteur des constructions 0 pour les routes et 6 à 120(nb de dizaines de m)
 # 0 routes, 6-12m pour les maisons, 12-20m pour les immeubles, 30-120m pour les grattes ciels
 MCity = np.zeros((n,m), dtype=int) #Matrice de la ville, 1=route, 2/3/4=batiments (maisons, immeuble), 5=zones de refuges, 6=zones de transport
 MGround = np.zeros((n,m), dtype=int) #Matrice du sol
 
+
+def city(matrice):
+    #len(matrice) >= 10
+    grid = matrice
+    rgrid = matrice
+    M = [len(matrice)//2,len(matrice)//2]
+    if n%2 == 0:
+        M[0] -= 0.5
+        M[1] -= 0.5
+    circles = {}
+    for i in range(n//12,n//2,n//10):
+        circles[i] = [[M[0],M[1]],i]
+    
+    xx = np.arange(grid.shape[0])
+    yy = np.arange(grid.shape[1])
+    for val in circles.values():
+        radius = val[1]
+        inside = (xx[:, None] - val[0][0])**2 + (yy - val[0][1])**2 <= radius**2
+        grid = grid | inside
+        rgrid += grid
+    #print(matrice)
+    plt.imshow(rgrid)
+    plt.show()
+    return rgrid
+
+
 def cityground(matrice):
     grid = matrice
     rgrid = matrice
     x = rd.randint(0,len(matrice)-1)
     y = rd.randint(0,len(matrice)-1)
-    M = (x,y)
+    M = [x,y]
     
     #circles = {'c1':[[M[0],M[1]],1],'c2':[[M[0],M[1]],2],'c3':[[M[0],M[1]],3]}
      
@@ -35,6 +61,7 @@ def cityground(matrice):
     #plt.imshow(rgrid)
     #plt.show()
     return rgrid
+
     
 def perturbation(matrice):
     for i in range(len(matrice)*(len(matrice)//2)):
@@ -50,6 +77,7 @@ def perturbation(matrice):
     plt.show()
     return matrice
 
+
 class perso:
     def __init__(self, sexe, age, pos, mobi, transp, capital):
        self.sexe = sexe
@@ -61,10 +89,9 @@ class perso:
        
     
        
-       
         
 
-
+city(MCity)
 MGround = cityground(MGround)
 perturbation(MGround)
 
