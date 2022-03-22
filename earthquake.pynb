@@ -11,8 +11,8 @@ MCity = np.zeros((n,m), dtype=int) #Matrice de la ville, 1=route, 2/3/4=batiment
 MGround = np.zeros((n,m), dtype=int) #Matrice du sol
 
 def cityground(matrice):
-    grid = np.zeros((len(matrice),len(matrice)), dtype=np.int)
-    rgrid = np.zeros((len(matrice),len(matrice)), dtype=np.int)
+    grid = matrice
+    rgrid = matrice
     x = rd.randint(0,len(matrice))
     y = rd.randint(0,len(matrice))
     M = (x,y)
@@ -36,7 +36,7 @@ def cityground(matrice):
     #print(grid)
     plt.imshow(rgrid)
     plt.show()
-    return 1
+    return rgrid
 
 cityground(MGround)
 
