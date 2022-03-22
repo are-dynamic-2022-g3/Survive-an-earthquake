@@ -2,8 +2,8 @@ import numpy as np
 import random as rd
 import matplotlib.pyplot as plt
 
-n = 100
-m = 100
+n = 40
+m = 40
 Mage = np.zeros((n,m), dtype=int) #Matrice de l'age des différentes structures (plus vieux plus on s'éloigne du centre)
 Mheight = np.zeros((n,m), dtype=int) #Hauteur des constructions 0 pour les routes et 6 à 120(nb de dizaines de m)
 # 0 routes, 6-12m pour les maisons, 12-20m pour les immeubles, 30-120m pour les grattes ciels
@@ -49,6 +49,21 @@ def perturbation(matrice):
     plt.imshow(matrice)
     plt.show()
     return matrice
+
+class perso:
+    def __init__(self, sexe, age, pos, mobi, transp, capital):
+       self.sexe = sexe
+       self.age = age
+       self.pos = pos
+       self.mobi = mobi
+       self.transp = transp
+       self.capital = capital
+       
+    
+       
+       
+        
+
 
 MGround = cityground(MGround)
 perturbation(MGround)
