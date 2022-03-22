@@ -13,13 +13,13 @@
 
 ## Description synthétique du projet
 
-**Problématique : Quels sont les caractéristiques principales d'un individu qui influent sur ses chances de survie lors d'un tremblement de terre en milieu urbain ?** 
+**Problématique :** Quels sont les caractéristiques principales d'un individu qui influent sur ses chances de survie lors d'un tremblement de terre en milieu urbain ? 
 
-**Hypothèse principale : L'age et le niveau de richesse sont les facteurs les plus importants dans l'augmentation des chances de survie d'un individu lors d'un tremblement de terre en milieu urbain**
+**Hypothèse principale :** L'age et le niveau de richesse sont les facteurs les plus importants dans l'augmentation des chances de survie d'un individu lors d'un tremblement de terre en milieu urbain.
 
-**Hypothèses secondaires :** 
+**Hypothèses secondaires :** Dans un modèle statique, les paramètres ont moins d'influences sur les chances de survie d'un individu que dans un modèle ou les habitants peuvent se déplacer pendant le tremblement de terre.
 
-**Objectifs :**
+**Objectifs :** Coder un modèle qui permet de générer une ville lambda, y effectuer la simulation d'un tremblement de terre, puis récupérer les informations des habitants ayant survécus et ceux qui sont morts, ainsi que leur cause de décès.
 
 **Critère(s) d'évaluation :**
 
@@ -47,6 +47,3 @@ Présentation du choix de modélisation, des outils, du code et des résultats (
 
 
 **Carte mentale de vos mots-clés, en utilisant** <a href="https://framindmap.org/mindmaps/index.html">Framindmap </a> 
-
-Liste de l'ensemble des ressources bibliographiques utilisées pour vos travaux. **<= Indiquez le canal utilisé pour les trouver (Google Scholar, sources wikipedia, ressources en ligne SU, ...)**
-
