@@ -10,6 +10,56 @@ Mheight = np.zeros((n,m), dtype=int) #Hauteur des constructions 0 pour les route
 MCity = np.zeros((n,m), dtype=int) #Matrice de la ville, 1=route, 2/3/4=batiments (maisons, immeuble), 5=zones de refuges, 6=zones de transport
 MGround = np.zeros((n,m), dtype=int) #Matrice du sol
 
+#Aurelien
+def cityConcentric(n,m, graph=False):
+    #len(matrice) >= 10
+    if n%2 == 0:
+        n=n+1
+        m=m+1
+    grid = np.zeros((n,m), dtype=int) 
+    rgrid = np.zeros((n,m), dtype=int) 
+    M = [n//2,n//2]
+        
+    circles = {}
+    for i in range(n//12,n//2,n//10):
+        circles[i] = [[M[0],M[1]],i]
+    
+    xx = np.arange(grid.shape[0])
+    yy = np.arange(grid.shape[1])
+    for val in circles.values():
+        radius = val[1]
+        inside = (xx[:, None] - val[0][0])**2 + (yy - val[0][1])**2 <= radius**2
+        grid = grid | inside
+        rgrid += grid
+    if graph:
+        plt.imshow(rgrid)
+        plt.show()
+    return rgrid
+
+def cityRoad1(city,e, graph=False):
+    n=len(city)
+    x = np.zeros((n,1), dtype=int) 
+    M = n//2
+    j = 0
+    A = 1
+    while(A<M):
+        x[M+A] = -1
+        x[M-A] = -1
+        A += j
+        j += e
+    #changer aussi les valeurs de city en même temps
+    road, roadT = np.meshgrid(x, x)
+    road = road+roadT
+    if graph:
+        print(road)
+        plt.imshow(road)
+        plt.show()
+        
+g = cityConcentric(10,10)
+plt.imshow(g)
+plt.show()
+cityRoad1(g,2,True)   
+#aurelien
 
 def city(matrice):
     #len(matrice) >= 10
