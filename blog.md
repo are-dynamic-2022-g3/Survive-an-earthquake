@@ -17,4 +17,13 @@ Voici ci dessous notre matrice de propagation des ondes:
 ### Semaine 4
 Cette semaine, nous avons continué de travailler sur notre modèle, en particulier la création des routes et des habitants de la ville, en leur affectant des données qui impacteront leur chances de survie potentielle, telles qu'un âge, un sexe mais également leur localisation et autres. 
 
+Voici ci dessous notre matrice de ville selon le modèle de Burgess:
+
+![image](https://user-images.githubusercontent.com/99738357/160619688-8f34f8a0-55be-4c67-93f2-d22166d5a8a9.png)
+
+Voici ci dessous notre matrice de hauteur des batiments de la ville:
+
+![image](https://user-images.githubusercontent.com/99738357/160619650-5b06cc97-0826-4af8-aef6-c7b75cf7f734.png)
+
+
 [Retour à la page principale](https://github.com/are-dynamic-2022-g3/Survive-an-earthquake)
