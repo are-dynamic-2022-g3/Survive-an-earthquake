@@ -17,7 +17,7 @@ Voici ci dessous notre matrice de propagation des ondes:
 ### Semaine 4
 Cette semaine, nous avons continué de travailler sur notre modèle, en particulier la création des routes et des habitants de la ville, en leur affectant des données qui impacteront leur chances de survie potentielle, telles qu'un âge, un sexe mais également leur localisation et autres. 
 
-Voici ci dessous notre matrice de ville (1000\*1000) selon le modèle de Burgess (que nous avons modifier pour qu'il soit plus réaliste):
+Voici ci dessous notre matrice de ville (1000\*1000) selon le modèle de Burgess (que nous avons modifier pour qu'il soit plus réaliste inversion des zones industrielles et zones de logements/immeubles):
 
 ![image](https://user-images.githubusercontent.com/99738357/160619688-8f34f8a0-55be-4c67-93f2-d22166d5a8a9.png)
 
