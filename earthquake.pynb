@@ -10,11 +10,11 @@ Mheight = np.zeros((n,m), dtype=int) #Hauteur des constructions 0 pour les route
 MCity = np.zeros((n,m), dtype=int) #Matrice de la ville, 1=route, 2/3/4=batiments (maisons, immeuble), 5=zones de refuges, 6=zones de transport
 MGround = np.zeros((n,m), dtype=int) #Matrice du sol
 
-#Aurelien
 import numpy as np
 import random
 import matplotlib.pyplot as plt
 
+#Aurelien
 def cityConcentric(n,m, graph=False):
     #len(matrice) >= 10
     if n%2 == 0:
@@ -43,8 +43,8 @@ def cityConcentric(n,m, graph=False):
 def densite1(M,dm,dp):
     n=len(M)
     m = n//2
-    for i in range(m):
-        for j in range(m):
+    for i in range(m+1):
+        for j in range(m+1):
             if(M[i][j]>0):
                 L=[M[i][j]]*(M[i][j]*dm)+[0]*dp
                 M[i][j]=random.choice(L)
@@ -58,8 +58,8 @@ def densite2(M,dm,dp):
     #plus lent
     n=len(M)
     m = n//2
-    for i in range(m):
-        for j in range(m):
+    for i in range(m+1):
+        for j in range(m+1):
             if(M[i][j]>0):
                 L=[M[i][j]]*(M[i][j]*dm)+[0]*dp
                 M[i][j]=random.choice(L)
@@ -134,9 +134,9 @@ def build1(M):
     #version symmétrique
     n=len(M)
     m = n//2
-    for i in range(m):
-        for j in range(m):
-            if(M[i][j]>0):
+    for i in range(m+1):
+        for j in range(m+1):
+            if((M[i][j]>0) and (M[i][j]!=5)):
                 M[i][j]=random.choice([M[i][j],random.randint(M[i][j]-1,M[i][j]+1)])
                 M[n-i-1][n-j-1]=M[i][j]
                 M[n-i-1][j]=M[i][j]
@@ -148,32 +148,40 @@ def build2(M):
     #version lente
     n=len(M)
     m = n//2
-    for i in range(m):
-        for j in range(m):
-            if(M[i][j]>0):
-                M[i][j]=random.choice([M[i][j],random.randint(M[i][j]-1,M[i][j]+1)])
+    for i in range(m+1):
+        for j in range(m+1):
+            if((M[i][j]>0) and (M[i][j]!=5)):
+                M[i][j]=random.choice([M[i][j],random.randint(M[i][j]-1,M[i][j]+1)]) 
                 M[n-i-1][n-j-1]=random.choice([M[n-i-1][n-j-1],random.randint(M[n-i-1][n-j-1]-1,M[n-i-1][n-j-1]+1)])
                 M[n-i-1][j]=random.choice([M[n-i-1][j],random.randint(M[n-i-1][j]-1,M[n-i-1][j]+1)])
                 M[i][n-j-1]=random.choice([M[i][n-j-1],random.randint(M[i][n-j-1]-1,M[i][n-j-1]+1)])
+            if(M[i][j]==5):
+                M[i][j]=random.choice([M[i][j],random.randint(M[i][j]-1,M[i][j])]) 
+                M[n-i-1][n-j-1]=random.choice([M[n-i-1][n-j-1],random.randint(M[n-i-1][n-j-1]-1,M[n-i-1][n-j-1])])
+                M[n-i-1][j]=random.choice([M[n-i-1][j],random.randint(M[n-i-1][j]-1,M[n-i-1][j])])
+                M[i][n-j-1]=random.choice([M[i][n-j-1],random.randint(M[i][n-j-1]-1,M[i][n-j-1])])
     plt.imshow(M)
     plt.show()
     
-g = cityConcentric(10,10)
+g = cityConcentric(100,100)
 plt.imshow(g)
 plt.show()
-print("densité")
-densite2(g,1,2)
 
 print("buildings")
 #build1(g)
 build2(g)
+
+print("densité")
+densite2(g,3,4)
+print(g[m-5:m+6,m-5:m+6])
+
 print("road")
 r = cityRoad2(g,5,False)  
 matrice_up2(r,g)
  
 n=len(g)
 m = n//2
-print(g[m-4:m+5,m-4:m+5])
+print(g[m-5:m+6,m-5:m+6])
 #matrice_up(r,g) 
 #aurelien
 
