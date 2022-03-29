@@ -14,6 +14,10 @@ import numpy as np
 import random
 import matplotlib.pyplot as plt
 
+import numpy as np
+import random
+import matplotlib.pyplot as plt
+
 #Aurelien
 def cityConcentric(n,m, graph=False):
     #len(matrice) >= 10
@@ -162,15 +166,44 @@ def build2(M):
                 M[i][n-j-1]=random.choice([M[i][n-j-1],random.randint(M[i][n-j-1]-1,M[i][n-j-1])])
     plt.imshow(M)
     plt.show()
+ 
+def hauteur(M):
+    Mhauteur = np.zeros((len(M),len(M)), dtype=int) 
+    Mage = np.zeros((len(M),len(M)), dtype=int) 
+    n = len(M)
+    m = n//2
+    d = { 1:(6,12), 2:(7,12), 3:(8,16), 4:(12,20), 5:(30,120)}
+    for i in range(len(M)):
+        for j in range(len(M)):
+            if M[i][j]>5:
+                M[i][j]=5
+            if M[i][j] > 0:
+                #print(M[i][j])
+                Min = d[M[i][j]][0]
+                Max = d[M[i][j]][1]
+                Mhauteur[i][j] = random.randint(Min,Max)
+                Mage[i][j] = random.randint(30,70)
+    Hc = [[random.randint(m-n//6,m+n//6+1),random.randint(m-n//6,m+n//6+1)] for i in range(n//40)]
+    print(Hc)
+    for c in Hc:
+        for x in range(c[0]-(n//30+1),c[0]+(n//30+1)):
+            for y in range(c[1]-(n//30+1),c[1]+(n//30+1)):
+                if (M[x][y] > 0) and (M[x][y]!=5):
+                    Mage[x][y] = random.randint(70,130)
+    print(Mhauteur)
+    plt.imshow(Mhauteur)
+    plt.show()
+    plt.imshow(Mage)
+    plt.show()
     
-g = cityConcentric(100,100)
+g = cityConcentric(10000,10000)
 plt.imshow(g)
 plt.show()
 
 print("buildings")
 #build1(g)
 build2(g)
-
+"""
 print("densité")
 densite2(g,3,4)
 print(g[m-5:m+6,m-5:m+6])
@@ -182,6 +215,9 @@ matrice_up2(r,g)
 n=len(g)
 m = n//2
 print(g[m-5:m+6,m-5:m+6])
+"""
+print("hauteur et age")
+hauteur(g)
 #matrice_up(r,g) 
 #aurelien
 
