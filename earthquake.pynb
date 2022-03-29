@@ -1,3 +1,32 @@
+
+def hauteur(M):
+    Mhauteur = np.zeros((len(M),len(M)), dtype=int) 
+    d = { 1:(6,12), 2:(7,12), 3:(8,16), 4:(12,20), 5:(30,120)}
+    for i in range(len(M)):
+        for j in range(len(M)):
+            if M[i][j] > 0:
+                #print(M[i][j])
+                Min = d[M[i][j]][0]
+                Max = d[M[i][j]][1]
+                Mhauteur[i][j] = random.randint(Min,Max)
+    print(Mhauteur)
+    plt.imshow(Mhauteur)
+    plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import numpy as np
 import random as rd
 import matplotlib.pyplot as plt
