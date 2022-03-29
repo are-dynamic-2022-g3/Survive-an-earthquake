@@ -25,5 +25,9 @@ Voici ci dessous notre matrice de hauteur des batiments de la ville (1000\*1000)
 
 ![image](https://user-images.githubusercontent.com/99738357/160619650-5b06cc97-0826-4af8-aef6-c7b75cf7f734.png)
 
+10000\*10000 (rien à ajouter)
+
+![image](https://user-images.githubusercontent.com/99738357/160628971-b6ba71a8-9550-4655-bb51-0a27d09d4d9d.png)
+
 
 [Retour à la page principale](https://github.com/are-dynamic-2022-g3/Survive-an-earthquake)
