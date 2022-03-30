@@ -18,6 +18,7 @@ import numpy as np
 import random
 import matplotlib.pyplot as plt
 
+
 #Aurelien
 def cityConcentric(n,m, graph=False):
     #len(matrice) >= 10
@@ -167,7 +168,7 @@ def build2(M):
     plt.imshow(M)
     plt.show()
  
-def hauteur(M):
+def HA(M):
     Mhauteur = np.zeros((len(M),len(M)), dtype=int) 
     Mage = np.zeros((len(M),len(M)), dtype=int) 
     n = len(M)
@@ -183,7 +184,7 @@ def hauteur(M):
                 Max = d[M[i][j]][1]
                 Mhauteur[i][j] = random.randint(Min,Max)
                 Mage[i][j] = random.randint(30,70)
-    Hc = [[random.randint(m-n//6,m+n//6+1),random.randint(m-n//6,m+n//6+1)] for i in range(n//40)]
+    Hc = [[random.randint(m-n//6,m+n//6+1),random.randint(m-n//6,m+n//6+1)] for i in range(n//30)]
     print(Hc)
     for c in Hc:
         for x in range(c[0]-(n//30+1),c[0]+(n//30+1)):
@@ -195,18 +196,61 @@ def hauteur(M):
     plt.show()
     plt.imshow(Mage)
     plt.show()
+    return Mage,Mhauteur
+
+def cityground(n,m):
+    matrice = np.zeros((n,n), dtype=int) 
+    grid = matrice
+    rgrid = matrice
+    x = random.randint(0,len(matrice)-1)
+    y = random.randint(0,len(matrice)-1)
+    M = [x,y]
+    circles = {}
+    for i in range(1,round((len(matrice)//2)*m/3)):
+        circles[i] = [[M[0],M[1]],i]
     
-g = cityConcentric(10000,10000)
+    xx = np.arange(grid.shape[0])
+    yy = np.arange(grid.shape[1])
+    for val in circles.values():
+        radius = val[1]
+        inside = (xx[:, None] - val[0][0])**2 + (yy - val[0][1])**2 <= radius**2
+        grid = grid | inside
+        rgrid += grid
+    plt.imshow(rgrid)
+    plt.show()
+    for i in range(len(rgrid)*(len(rgrid)//2)):
+        x = random.randint(0,len(rgrid)-1)
+        y = random.randint(0,len(rgrid)-1)
+        cgt = random.randint(-1,1)
+        if rgrid[x][y]!=0:
+            rgrid[x][y] += cgt
+        else:
+            rgrid[x][y] += abs(cgt)
+    print(rgrid)
+    plt.imshow(rgrid)
+    plt.show()
+    return rgrid
+
+def Earthquake(M, MAge, MHeight, m):   #matrice ville, magnitude    
+    MGround = cityground(len(M),m)
+    plt.imshow(((m//2)*MGround)+(MAge//4)+(MHeight//4))
+    plt.show()
+    """for i in range(len(M)):
+        for j in range(len(M)):
+            
+            #détruire en fct de age et taille 
+            print("n")"""
+ 
+g = cityConcentric(100,100)
 plt.imshow(g)
 plt.show()
 
 print("buildings")
 #build1(g)
 build2(g)
-"""
+
 print("densité")
 densite2(g,3,4)
-print(g[m-5:m+6,m-5:m+6])
 
 print("road")
 r = cityRoad2(g,5,False)  
@@ -215,9 +259,11 @@ matrice_up2(r,g)
 n=len(g)
 m = n//2
 print(g[m-5:m+6,m-5:m+6])
-"""
+
 print("hauteur et age")
-hauteur(g)
+MAge, MHauteur = HA(g)
+
+Earthquake(g,MAge, MHauteur,7)
 #matrice_up(r,g) 
 #aurelien
 
