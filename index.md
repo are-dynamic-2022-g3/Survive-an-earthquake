@@ -45,5 +45,6 @@ Présentation du choix de modélisation, des outils, du code et des résultats (
 
 [Park, Robert E., et Ernest W. Burgess. The City. University of Chicago Press, 2012.](https://shora.tabriz.ir/Uploads/83/cms/user/File/657/E_Book/Urban%20Studies/park%20burgess%20the%20city.pdf) : Google Scholar
 
+[Who is at risk of death in an earthquake? ](https://pubmed.ncbi.nlm.nih.gov/15383413/) : National library of medicine
 
 **Carte mentale de vos mots-clés, en utilisant** <a href="https://framindmap.org/mindmaps/index.html">Framindmap </a> 
