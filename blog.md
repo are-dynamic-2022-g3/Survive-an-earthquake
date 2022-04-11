@@ -31,3 +31,7 @@ Voici ci dessous notre matrice de hauteur des batiments de la ville (1000\*1000)
 
 
 [Retour à la page principale](https://github.com/are-dynamic-2022-g3/Survive-an-earthquake)
+
+
+### Semaine 5
+Cette semaine, nous avons modifié quelques parties de notre code, notamment les caractéristiques des habitants de la ville car nous avons trouvé de nouvelles informations pertinentes qui vont nous permettre de mieux faire fonctionner notre projet. Ainsi, nous avons surtout améliorer les parties du code que nous avions déjà pour s'assurer que tout fonctionne bien.
