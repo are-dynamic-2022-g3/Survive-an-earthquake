@@ -258,3 +258,48 @@ MAge, MHauteur, MRes = HA(g)
 Earthquake(g,MAge, MHauteur, MRes, 8)
 #matrice_up(r,g) 
 #aurelien
+
+
+#eliot et gaetan
+class perso:
+    def __init__(self, age, sante, capital, posi):
+       #self.sexe = sexe
+       self.age = age
+       self.sante = sante
+       #self.transp = transp
+       self.capital = capital
+       self.posi = posi
+
+# age entre 0 et 100, sante {0,1} : 0-> handicape ; 1 -> bonne sante, capital {0,1,2,3} : 0 -> pauvre ; 1 -> classe moy ; 2 -> riche ; 3 -> ultra riche.
+def matrice_hab(nb_hab):
+    matrice = np.zeros((nb_hab,3), dtype=int)
+    for i in range (nb_hab):
+        personne = perso(0,0,0,0)
+        personne.age = np.random.randint(80)
+        r1 = np.random.randint(5)
+        if(r1==4):
+            personne.sante = 0
+        else:
+            personne.sante = 1
+        r2 =  np.random.randint(100)
+        if(r2<30):
+            personne.capital = 0
+        elif (r2<80):
+            personne.capital = 1
+        elif (r2<99):
+            personne.capital = 2
+        else:
+            personne.capital = 3
+        
+        
+        matrice[i][0] = personne.age
+        matrice[i][1] = personne.sante
+        matrice[i][2] = personne.capital
+
+    return matrice
+
+
+
+print("hab")
+print(matrice_hab(50))
+
