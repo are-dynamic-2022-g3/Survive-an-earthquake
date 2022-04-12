@@ -2,6 +2,89 @@ import numpy as np
 import random
 import matplotlib.pyplot as plt
 
+
+class perso:
+    def __init__(self, age, sante, capital, posi):
+       #self.sexe = sexe
+       self.age = age
+       self.sante = sante
+       #self.transp = transp
+       self.capital = capital
+       self.posi = posi
+
+# age entre 0 et 100, sante {0,1} : 0-> handicape ; 1 -> bonne sante, capital {0,1,2,3} : 0 -> pauvre ; 1 -> classe moy ; 2 -> riche ; 3 -> ultra riche.
+def append_hab(type_habitation, position, Lhab):
+    if type_habitation == 1:
+        nb_hab = np.random.randint(2, 20)
+        
+    if type_habitation == 2:
+        nb_hab = np.random.randint(0, 5)
+        
+    if type_habitation == 3:
+        nb_hab = np.random.randint(5, 15)
+        
+    if type_habitation == 4:
+        nb_hab = np.random.randint(10, 20)
+        
+    if type_habitation == 5:
+        nb_hab = np.random.randint(50, 150)
+        
+    for i in range (nb_hab):
+        personne = perso(0,0,0,0)
+        
+        #Age : hasard entre 10 et 80
+        personne.age = np.random.randint(10,80)
+        
+        # Classe sociale : en fonction du batiment ou on habite
+        if type_habitation == 1 or type_habitation == 3:
+            r1 = np.random.randint(5)
+            if r1<=3:
+                personne.capital = 0
+            
+            else :
+                personne.capital = 1
+                
+        if type_habitation == 2 :
+            r2 = np.random.randint(11)
+            if r2<=5:
+                personne.capital = 1
+            
+            elif r2<=9:
+                personne.capital = 2
+            
+            else :
+                personne.capital = 3
+        
+        if type_habitation == 4 :
+            r3 = np.random.randint(11)
+            if r3<=7:
+                personne.capital = 1
+            
+            else:
+                personne.capital = 2
+        
+        if type_habitation == 5 :
+            r4 = np.random.randint(51)
+            if r4<=40:
+                personne.capital = 1
+            
+            elif r4<=49:
+                personne.capital = 2
+            
+            else :
+                personne.capital = 3
+        
+        # Sante : 1% chance d'etre handicape
+        r5 = np.random.randint(101)
+        if r5 == 1:
+            personne.sante = 0
+        
+        else : 
+            personne.sante = 1
+        
+        personne.posi = position
+        Lhab.append(personne)
+            
 #Aurelien
 def cityConcentric(n,m, graph=False):
     #len(matrice) >= 10
@@ -151,10 +234,11 @@ def build2(M):
     plt.imshow(M)
     plt.show()
  
-def HA(M):
+def HAP(M):
     Mhauteur = np.zeros((len(M),len(M)), dtype=int) 
     Mage = np.zeros((len(M),len(M)), dtype=int) 
-    Mres = np.zeros((len(M),len(M)), dtype=int) 
+    Mres = np.zeros((len(M),len(M)), dtype=int)
+    Lhab = np.array()
     n = len(M)
     m = n//2
     d = { 1:(6,12), 2:(7,12), 3:(8,16), 4:(12,20), 5:(30,120)}
@@ -169,6 +253,11 @@ def HA(M):
                 Mhauteur[i][j] = random.randint(Min,Max)
                 Mage[i][j] = random.randint(30,70)
                 Mres[i][j] = random.randint(1,10)//M[i][j]
+                
+                #caracs habitant
+                append_hab(M[i][j],(i,j),Lhab)
+                
+                
     Hc = [[random.randint(m-n//6,m+n//6+1),random.randint(m-n//6,m+n//6+1)] for i in range(n//30)]
     print(Hc)
     for c in Hc:
@@ -232,7 +321,31 @@ def Earthquake(M, MAge, MHeight, MRes, m):   #matrice ville, magnitude
             
             #détruire en fct de age et taille 
             print("n")"""
- 
+    return M
+
+def equation(perso, mat_magnitude):
+    x, y = perso.posi
+    ratio_magnitude = mat_magnitude[x][y]
+    if perso.sante = 0:
+        ratio_handicap = 2
+    else:
+        ratio_handicap = 1
+    if perso.age >= 75:
+        ratio_age = 3
+    elif perso.age >= 60:
+        ratio_age = 1.5
+    elif perso.age <= 15:
+        ratio_age = 1.2
+    else:
+        ratio_age = 1
+    
+    chance_m = ratio_age* ratio_handicap*ratio_magnitude
+    return chance_m
+
+
+def simulation    
+
+
 g = cityConcentric(100,100)
 plt.imshow(g)
 plt.show()
@@ -253,53 +366,39 @@ m = n//2
 print(g[m-5:m+6,m-5:m+6])
 
 print("hauteur et age")
-MAge, MHauteur, MRes = HA(g)
+MAge, MHauteur, MRes = HAP(g)
 
 Earthquake(g,MAge, MHauteur, MRes, 8)
 #matrice_up(r,g) 
 #aurelien
 
 
-#eliot et gaetan
-class perso:
-    def __init__(self, age, sante, capital, posi):
-       #self.sexe = sexe
-       self.age = age
-       self.sante = sante
-       #self.transp = transp
-       self.capital = capital
-       self.posi = posi
 
-# age entre 0 et 100, sante {0,1} : 0-> handicape ; 1 -> bonne sante, capital {0,1,2,3} : 0 -> pauvre ; 1 -> classe moy ; 2 -> riche ; 3 -> ultra riche.
-def matrice_hab(nb_hab):
-    matrice = np.zeros((nb_hab,3), dtype=int)
-    for i in range (nb_hab):
-        personne = perso(0,0,0,0)
-        personne.age = np.random.randint(80)
-        r1 = np.random.randint(5)
-        if(r1==4):
-            personne.sante = 0
-        else:
-            personne.sante = 1
-        r2 =  np.random.randint(100)
-        if(r2<30):
-            personne.capital = 0
-        elif (r2<80):
-            personne.capital = 1
-        elif (r2<99):
-            personne.capital = 2
-        else:
-            personne.capital = 3
-        
-        
-        matrice[i][0] = personne.age
-        matrice[i][1] = personne.sante
-        matrice[i][2] = personne.capital
+"""
+import matplotlib.pyplot as plt
 
-    return matrice
+n=100
+m=100
+grid = np.zeros((n,m), dtype=np.bool)
+square_length = 0.5
+M = (n//2,m//2)
+print(M)
+circles = {'c1':[[M[0],M[1]],1.5]}
 
+# Generate arrays of indices/coordiates so we can do the
+# calculations the Numpy way, without resorting to loops
+# I always get the index order wrong so double check...
+xx = np.arange(grid.shape[0])
+yy = np.arange(grid.shape[1])
 
+for val in circles.values():
+radius = val[1]
+# same index caveat here
+# Calling Mr Pythagoras: Find the pixels that lie inside this circle
+inside = (xx[:, None] - val[0][0])**2 + (yy - val[0][1])**2 <= radius**2
 
-print("hab")
-print(matrice_hab(50))
+# do grid & inside and initialize grid with ones for intersection instead of union
+grid = grid | inside
 
+plt.imshow(grid)
+plt.show()"""
