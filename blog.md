@@ -35,3 +35,8 @@ Voici ci dessous notre matrice de hauteur des batiments de la ville (1000\*1000)
 
 ### Semaine 5
 Cette semaine, nous avons modifié quelques parties de notre code, notamment les caractéristiques des habitants de la ville car nous avons trouvé de nouvelles informations pertinentes qui vont nous permettre de mieux faire fonctionner notre projet. Ainsi, nous avons surtout améliorer les parties du code que nous avions déjà pour s'assurer que tout fonctionne bien.
+
+### Semaine 6
+Cette semaine nous avons terminé notre code et nous avons effectué des tests et des simulations à partir de celui-ci afin de vérifier si notre hypothèse principale était vérifiée. Ainsi on obtient un graphique du type : 
+
+"""insérer image graphique ici"""
