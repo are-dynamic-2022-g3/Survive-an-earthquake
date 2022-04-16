@@ -39,5 +39,5 @@ Cette semaine, nous avons modifié quelques parties de notre code, notamment les
 ### Semaine 6
 Cette semaine nous avons terminé notre code et nous avons effectué des tests et des simulations à partir de celui-ci afin de vérifier si notre hypothèse principale était vérifiée. Ainsi on obtient un graphique du type : 
 
-![image](https://user-images.githubusercontent.com/99737904/163685061-fb8cb023-c192-4d07-a526-3f7c87746c17.png)
+![image](https://user-images.githubusercontent.com/99737904/163685087-552eb731-d960-4fc8-a7fd-8de5698efa58.png)
 
