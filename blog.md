@@ -40,5 +40,4 @@ Cette semaine, nous avons modifié quelques parties de notre code, notamment les
 Cette semaine nous avons terminé notre code et nous avons effectué des tests et des simulations à partir de celui-ci afin de vérifier si notre hypothèse principale était vérifiée. Ainsi on obtient un graphique du type : 
 
 ![image](https://user-images.githubusercontent.com/99737904/163685040-2a02d4f9-127d-47eb-8174-91d061ed05cf.png)
-![image](https://user-images.githubusercontent.com/99737904/163685043-627b6785-e6ea-4005-be4d-d3475671814c.png)
 
