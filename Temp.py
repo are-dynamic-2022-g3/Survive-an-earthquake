@@ -107,8 +107,8 @@ def cityConcentric(n,m, graph=False):
         grid = grid | inside
         rgrid += grid
     if graph:
-        plt.imshow(rgrid)
-        plt.show()
+        """plt.imshow(rgrid)
+        plt.show()"""
     return rgrid
 
 def densite1(M,dm,dp):
@@ -122,8 +122,8 @@ def densite1(M,dm,dp):
                 M[n-i-1][n-j-1]=M[i][j]
                 M[n-i-1][j]=M[i][j]
                 M[i][n-j-1]=M[i][j]
-    plt.imshow(M)
-    plt.show()
+    """plt.imshow(M)
+    plt.show()"""
 
 def densite2(M,dm,dp):
     #plus lent
@@ -137,8 +137,8 @@ def densite2(M,dm,dp):
                 M[n-i-1][n-j-1]=random.choice(L)
                 M[n-i-1][j]=random.choice(L)
                 M[i][n-j-1]=random.choice(L)
-    plt.imshow(M)
-    plt.show()
+    """plt.imshow(M)
+    plt.show()"""
     
 def cityRoad1(city,e, graph=False):
     n=len(city)
@@ -156,8 +156,8 @@ def cityRoad1(city,e, graph=False):
     road = road+roadT
     if graph:
         print(road)
-        plt.imshow(road)
-        plt.show()
+        """plt.imshow(road)
+        plt.show()"""
     return road
 
 def cityRoad2(city,e, graph=False):
@@ -173,32 +173,32 @@ def cityRoad2(city,e, graph=False):
     road, roadT = np.meshgrid(x, x)
     road = road+roadT
     if graph:
-        plt.imshow(road)
-        plt.show()
+        """plt.imshow(road)
+        plt.show()"""
     return road
 
 def matrice_up(M1,M2):
     #lent
-    plt.imshow(M2)
-    plt.show()
+    """plt.imshow(M2)
+    plt.show()"""
     for i in range(len(M1)):
         for j in range(len(M1)):
             if(M1[i][j])!=0:
                 M2[i][j]=M1[i][j]
-    plt.imshow(M2)
-    plt.show()
+    """plt.imshow(M2)
+    plt.show()"""
 
 def matrice_up2(M1,M2):
     #plus rapide mais symmétrique
-    plt.imshow(M2)
-    plt.show()
+    """plt.imshow(M2)
+    plt.show()"""
 
     for i in range(len(M1)):
         if(M1[0, i])!=0:
                 M2[:, i]=M1[: ,i]
                 M2[i, :]=M1[i, :]
-    plt.imshow(M2)
-    plt.show()
+    """plt.imshow(M2)
+    plt.show()"""
 
             
 def build1(M):
@@ -212,8 +212,8 @@ def build1(M):
                 M[n-i-1][n-j-1]=M[i][j]
                 M[n-i-1][j]=M[i][j]
                 M[i][n-j-1]=M[i][j]
-    plt.imshow(M)
-    plt.show()
+    """plt.imshow(M)
+    plt.show()"""
 
 def build2(M):
     #version lente
@@ -231,14 +231,14 @@ def build2(M):
                 M[n-i-1][n-j-1]=random.choice([M[n-i-1][n-j-1],random.randint(M[n-i-1][n-j-1]-1,M[n-i-1][n-j-1])])
                 M[n-i-1][j]=random.choice([M[n-i-1][j],random.randint(M[n-i-1][j]-1,M[n-i-1][j])])
                 M[i][n-j-1]=random.choice([M[i][n-j-1],random.randint(M[i][n-j-1]-1,M[i][n-j-1])])
-    plt.imshow(M)
-    plt.show()
+    """plt.imshow(M)
+    plt.show()"""
  
 def HAP(M):
     Mhauteur = np.zeros((len(M),len(M)), dtype=int) 
     Mage = np.zeros((len(M),len(M)), dtype=int) 
     Mres = np.zeros((len(M),len(M)), dtype=int)
-    Lhab = np.array()
+    Lhab = []
     n = len(M)
     m = n//2
     d = { 1:(6,12), 2:(7,12), 3:(8,16), 4:(12,20), 5:(30,120)}
@@ -266,11 +266,11 @@ def HAP(M):
                 if (M[x][y] > 0) and (M[x][y]!=5):
                     Mage[x][y] = random.randint(70,130)
     print(Mhauteur)
-    plt.imshow(Mhauteur)
+    """plt.imshow(Mhauteur)
     plt.show()
     plt.imshow(Mage)
-    plt.show()
-    return Mage,Mhauteur,Mres
+    plt.show()"""
+    return Mage,Mhauteur,Mres,Lhab
 
 def cityground(n,m,d):
     matrice = np.zeros((n,n), dtype=int) 
@@ -290,8 +290,8 @@ def cityground(n,m,d):
         inside = (xx[:, None] - val[0][0])**2 + (yy - val[0][1])**2 <= radius**2
         grid = grid | inside
         rgrid += grid
-    plt.imshow(rgrid)
-    plt.show()
+    """plt.imshow(rgrid)
+    plt.show()"""
     for i in range(len(rgrid)*(len(rgrid)//2)):
         x = random.randint(0,len(rgrid)-1)
         y = random.randint(0,len(rgrid)-1)
@@ -301,8 +301,8 @@ def cityground(n,m,d):
         else:
             rgrid[x][y] += abs(cgt)
     print(rgrid)
-    plt.imshow(rgrid)
-    plt.show()
+    """plt.imshow(rgrid)
+    plt.show()"""
     return rgrid
 
 def Earthquake(M, MAge, MHeight, MRes, m):   #matrice ville, magnitude 
@@ -312,10 +312,12 @@ def Earthquake(M, MAge, MHeight, MRes, m):   #matrice ville, magnitude
     M = (M/40).round(decimals=1)
     M = M-np.min(M)
     print(M, "\nmax:", round(np.max(M),2) , " mean:", round(np.mean(M),2))
-    plt.imshow(M)
+    """ plt.imshow(M)
     plt.show()
     plt.imshow(M.round(decimals=0))
-    plt.show()
+    plt.show()"""
+    
+    
     """for i in range(len(M)):
         for j in range(len(M)):
             
@@ -323,10 +325,10 @@ def Earthquake(M, MAge, MHeight, MRes, m):   #matrice ville, magnitude
             print("n")"""
     return M
 
-def equation(perso, mat_magnitude):
+def equation(perso, mat_magnitude, chance_mort_init):
     x, y = perso.posi
     ratio_magnitude = mat_magnitude[x][y]
-    if perso.sante = 0:
+    if perso.sante == 0:
         ratio_handicap = 2
     else:
         ratio_handicap = 1
@@ -338,40 +340,91 @@ def equation(perso, mat_magnitude):
         ratio_age = 1.2
     else:
         ratio_age = 1
-    
-    chance_m = ratio_age* ratio_handicap*ratio_magnitude
+    if perso.capital == 3:
+        ratio_capital = 0.5
+    else:
+        ratio_capital = 1.1
+    chance_m = ((chance_mort_init*ratio_capital*ratio_age* ratio_handicap*ratio_magnitude)/np.max(mat_magnitude)*6)/2
     return chance_m
 
 
-def simulation    
+def simulation1(taille_v,chance_mort_init):
+    g = cityConcentric(taille_v,taille_v)
+    
+    build2(g)
+
+    densite2(g,3,4)
+
+    r = cityRoad2(g,5,False)  
+    matrice_up2(r,g)
+ 
+    MAge, MHauteur, MRes, Lhab = HAP(g)
+
+    M = Earthquake(g,MAge, MHauteur, MRes, 8)
+    
+    liste_chances = [[],[],[],[]]
+    for i in Lhab:
+        if i.capital == 0:
+            liste_chances[0].append(equation(i, M, chance_mort_init))
+        if i.capital == 1:
+            liste_chances[1].append(equation(i, M, chance_mort_init))
+        if i.capital == 2:
+            liste_chances[2].append(equation(i, M, chance_mort_init))
+        if i.capital == 3:
+            liste_chances[3].append(equation(i, M, chance_mort_init))
+    """for j in range(4):
+        plt.plot(liste_chances[j])
+    plt.show()"""
+    return liste_chances
 
 
-g = cityConcentric(100,100)
+def simulation_m(taille_v,chance_mort_init,iterations):
+    Lmoy = [[],[],[],[]]
+    for i in range(iterations):
+        M = simulation1(taille_v, chance_mort_init)
+        Lmoy[0].append(np.mean(M[0]))
+        Lmoy[3].append(np.mean(M[3]))
+        Lmoy[2].append(np.mean(M[2]))
+        Lmoy[1].append(np.mean(M[1]))
+    plt.subplot(1, 2, 1)
+    plt.plot(Lmoy[0], 'r', label = "pauvres")
+    plt.plot(Lmoy[1], 'm', label = "classe moyenne")
+    plt.plot(Lmoy[2], 'y', label = "riches")
+    plt.plot(Lmoy[3], 'c', label = "ultra-riches")
+    plt.ylim(0,1)
+    plt.subplot(1, 2, 2)
+    plt.plot([0,iterations], [np.mean(Lmoy[0]),np.mean(Lmoy[0])], 'r--', label = "pauvres")
+    plt.plot([0,iterations], [np.mean(Lmoy[1]),np.mean(Lmoy[1])], 'm--', label = "classe moyenne")
+    plt.plot([0,iterations], [np.mean(Lmoy[2]),np.mean(Lmoy[2])], 'y--', label = "riches")
+    plt.plot([0,iterations], [np.mean(Lmoy[3]),np.mean(Lmoy[3])], 'c--', label = "ultra-riches")
+    plt.ylim(0,1)
+    plt.legend()
+    plt.show()
+    return Lmoy
+
+
+"""g = cityConcentric(100,100)
 plt.imshow(g)
 plt.show()
-
 print("buildings")
 #build1(g)
 build2(g)
-
 print("densité")
 densite2(g,3,4)
-
 print("road")
 r = cityRoad2(g,5,False)  
 matrice_up2(r,g)
- 
 n=len(g)
 m = n//2
 print(g[m-5:m+6,m-5:m+6])
 
 print("hauteur et age")
-MAge, MHauteur, MRes = HAP(g)
+MAge, MHauteur, MRes, Lhab = HAP(g)
+M = Earthquake(g,MAge, MHauteur, MRes, 8)"""
 
-Earthquake(g,MAge, MHauteur, MRes, 8)
-#matrice_up(r,g) 
-#aurelien
+#simulation1(25, 0.3)
 
+simulation_m(50, 0.3, 50)
 
 
 """
@@ -402,3 +455,4 @@ grid = grid | inside
 
 plt.imshow(grid)
 plt.show()"""
+
