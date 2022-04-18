@@ -50,6 +50,7 @@ Graphique du taux de survie non-moyenné et moyenné des victimes en fonction de
 ![image](https://user-images.githubusercontent.com/99737904/163810642-97c4e0a5-73cb-4f6d-b50f-74019256ff5f.png)
 
 Graphique du taux de survie non-moyenné et moyenné des victimes en fonction de l'âge des individus.
+
 aaaa
 
 
