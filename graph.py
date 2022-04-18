@@ -341,9 +341,9 @@ def equation(perso, mat_magnitude, chance_mort_init):
     else:
         ratio_age = 1
     if perso.capital == 3:
-        ratio_capital = 0.5
+        ratio_capital = 0.9
     else:
-        ratio_capital = 1.1
+        ratio_capital = 1
     chance_m = ((chance_mort_init*ratio_capital*ratio_age* ratio_handicap*ratio_magnitude)/np.max(mat_magnitude)*2.5)/2
     return chance_m
 
