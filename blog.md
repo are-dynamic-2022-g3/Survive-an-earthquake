@@ -39,6 +39,8 @@ Cette semaine, nous avons modifié quelques parties de notre code, notamment les
 ### Semaine 6
 Cette semaine nous avons terminé notre code et nous avons effectué des tests et des simulations à partir de celui-ci afin de vérifier si notre hypothèse principale était vérifiée. Ainsi on obtient des graphiques du type : 
 
+Ici sur 50 simulations, on a : 
+
 Graphique du taux de survie non-moyenné et moyenné des victimes en fonction de la richesse des individus.
 
 ![image](https://user-images.githubusercontent.com/99737904/163685087-552eb731-d960-4fc8-a7fd-8de5698efa58.png)
