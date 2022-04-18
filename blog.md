@@ -42,23 +42,7 @@ Cette semaine nous avons terminé notre code et nous avons effectué des tests e
 Ici sur 50 simulations, on a : 
 
 
-aaaa
-
-![image](https://user-images.githubusercontent.com/99737904/163685087-552eb731-d960-4fc8-a7fd-8de5698efa58.png)
-
-Graphique du taux de survie non-moyenné et moyenné des victimes en fonction de la richesse des individus.
-
-![image](https://user-images.githubusercontent.com/99737904/163810642-97c4e0a5-73cb-4f6d-b50f-74019256ff5f.png)
-
-Graphique du taux de survie non-moyenné et moyenné des victimes en fonction de l'âge des individus.
-
-aaaa
-
-
-bbbb
-
 Graphique du taux de survie non-moyenné et moyenné des victimes en fonction de la richesse des individus et l'âge des individus.
 
 ![image](https://user-images.githubusercontent.com/99737904/163819958-b62e148b-0dcc-4d66-86d0-90a623d2b6a4.png) ![image](https://user-images.githubusercontent.com/99737904/163819995-d6db1ddb-cb2c-4c5e-ae9d-02d3f3d5c566.png)
 
-bbbb
