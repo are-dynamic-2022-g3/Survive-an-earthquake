@@ -56,6 +56,8 @@ aaaa
 
 bbbb
 
+Graphique du taux de survie non-moyenné et moyenné des victimes en fonction de la richesse des individus et l'âge des individus.
+
 ![image](https://user-images.githubusercontent.com/99737904/163819958-b62e148b-0dcc-4d66-86d0-90a623d2b6a4.png) ![image](https://user-images.githubusercontent.com/99737904/163819995-d6db1ddb-cb2c-4c5e-ae9d-02d3f3d5c566.png)
 
 bbbb
