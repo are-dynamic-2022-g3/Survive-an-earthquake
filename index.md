@@ -21,7 +21,8 @@
 
 **Objectifs :** Coder un modèle qui permet de générer une ville lambda, y effectuer la simulation d'un tremblement de terre, puis récupérer les informations des habitants ayant survécus et ceux qui sont morts, ainsi que leur cause de décès.
 
-**Critère(s) d'évaluation :**
+**Critère(s) d'évaluation :** Évaluer le taux de décès en fonction du niveau de richesses de l'individu et de son âge.
+
 
 ## Présentation structurée des résultats
 
