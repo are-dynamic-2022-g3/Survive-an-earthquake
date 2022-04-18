@@ -43,6 +43,7 @@ Ici sur 50 simulations, on a :
 
 
 aaaa
+
 ![image](https://user-images.githubusercontent.com/99737904/163685087-552eb731-d960-4fc8-a7fd-8de5698efa58.png)
 
 Graphique du taux de survie non-moyenné et moyenné des victimes en fonction de la richesse des individus.
