@@ -43,7 +43,9 @@ voici le résultat de l'appel `cityConcentric(100,100, True)`:
     <figcaption>les couleurs correspondent à différentes valeurs de la matrice.</figcaption>
 <figure>
 <br>
+    
 ----
+    
 Nous avons ensuite dispersé le modèle puis ajouté des routes ce qui nous donne cette matrice
 
 ### Support or Contact
