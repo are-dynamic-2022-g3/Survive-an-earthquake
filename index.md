@@ -50,7 +50,7 @@ Nous avons ensuite dispersé le modèle puis ajouté des routes ce qui nous donn
     <figcaption>les couleurs correspondent à différentes valeurs de la matrice.</figcaption>
 <figure>
 
-    
+<br>   
 répatition des ondes
 
 <br>
