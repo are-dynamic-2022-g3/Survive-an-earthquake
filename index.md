@@ -52,7 +52,6 @@ Nous avons ensuite dispersé le modèle puis ajouté des routes ce qui nous donn
 
     
 répatition des ondes
-
 <br>
 Pour évaluer le taux de survie, nous regardons une matrice d'age des batiments, de taille et de résitances (déterminer d'après notre adaptation du modèle de Burgess, nous avons supeposé ses matrices à celle de la répartition des ondes ce qui nous donne cette matrice
 
