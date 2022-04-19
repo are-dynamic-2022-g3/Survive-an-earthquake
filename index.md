@@ -38,7 +38,7 @@ def cityConcentric(n,m, graph=False):
 
 voici le résultat de l'appel `cityConcentric(100,100, True)`: 
 
-<p align="middle" width="100%">
+<p align="center" width="100%">
     <img width="25%" src="https://user-images.githubusercontent.com/99738357/163983314-b5af5387-a496-4715-94f9-5afcf9927ca8.png">
     <figcaption>les couleurs correspondent à différentes valeurs de la matrice.</figcaption>
 </p>
