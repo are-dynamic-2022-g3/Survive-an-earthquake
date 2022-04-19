@@ -41,7 +41,7 @@ voici le résultat de l'appel `cityConcentric(100,100, True)`:
 <figure>
     <img width="25%" src="https://user-images.githubusercontent.com/99738357/163983314-b5af5387-a496-4715-94f9-5afcf9927ca8.png">
 <figure>
-_les couleurs correspondent à différentes valeurs de la matrice._  
+*les couleurs correspondent à différentes valeurs de la matrice.*  
     
 Nous avons ensuite dispersé le modèle puis ajouté des routes ce qui nous donne cette matrice (1000*1000):
 <figure>
