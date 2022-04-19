@@ -45,10 +45,12 @@ Ici sur 50 simulations, on a :
 Graphique du taux de survie non-moyenné et moyenné des victimes en fonction de la richesse des individus et l'âge des individus.
 
 ![image](https://user-images.githubusercontent.com/99736848/163979551-df554a24-b209-4bba-b0d7-11f47129e597.png) magnitude 3 en fonction de la richesse
+
 ![image](https://user-images.githubusercontent.com/99736848/163979690-e3a8bfe3-599a-48ff-89a6-59eb897b8c73.png) magnitude 8 en fonction de la richesse
 
 ![image](https://user-images.githubusercontent.com/99736848/163979765-2cfd1afd-b882-497f-8bea-4655c79d3442.png) magnitude 3 en fonction de l'âge
-![image](https://user-images.githubusercontent.com/99736848/163979891-24ccab9f-e21f-4de5-b7b2-1d4c956ab297.png) magnitude 8 en fonction de l'âg
+
+![image](https://user-images.githubusercontent.com/99736848/163979891-24ccab9f-e21f-4de5-b7b2-1d4c956ab297.png) magnitude 8 en fonction de l'âge
 
 
 
