@@ -10,6 +10,11 @@ Cette semaine nous avons fait la bibliographie de notre projet. Après avoir tro
 ### Semaine 3
 Cette semaine, nous avons débattu de notre modèle et de la meilleure façon de l'implémenter. Nous avons choisi de commencer par le modéle le plus simple, modéle concentrique. Nous avons représenté notre ville par une multitude de matrices carré qui correspondent à la propagation des ondes, les différents batiments, la hauteur et l'age de ces structures. 
 
+Voici notre modèle de ville basé sur le modèle de Burgess:
+
+![image](https://user-images.githubusercontent.com/99736848/163983372-75105150-d76c-4f73-895b-5c11f4fe63da.png)
+
+
 Voici ci dessous notre matrice de propagation des ondes:
 
 ![image](https://user-images.githubusercontent.com/99737904/159502319-f2776ada-3f9d-4fe0-b899-7c6b866b3708.png)
@@ -52,10 +57,6 @@ Graphique du taux de survie non-moyenné et moyenné des victimes en fonction de
 
 ![image](https://user-images.githubusercontent.com/99736848/163979891-24ccab9f-e21f-4de5-b7b2-1d4c956ab297.png) magnitude 8 en fonction de l'âge
 
-
-
-
-![image](https://user-images.githubusercontent.com/99736848/163983207-e35a63e2-1acd-4334-a85c-652a02498c89.png)
 
 
 
