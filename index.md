@@ -1,29 +1,39 @@
 ## Projet ARE 2022: Survive An Earthquake
 
-You can use the [editor on GitHub](https://github.com/are-dynamic-2022-g3/Survive-an-earthquake/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+  Un séisme dure en moyenne une minute, c’est plus que le temps qu’il vous faudra pour lire cette introduction. Notre projet d’ARE consiste à modéliser ainsi qu’analyser l’évolution d’une population lambda durant l’occurrence d’un tremblement de terre en ville. L’objectif de ce projet est d’identifier les différents facteurs qui ont un impact sur les chances de survie durant un séisme. On regardera seulement les effets primaires (sur un court lapse de temps). Les enjeux de notre modèle sont de comprendre comment vivre dans un quartier plus développé peut limiter le nombres de victimes. Nous nous intéresserons aussi à des facteurs corrélés tel que la densité de la population étudié, l’age moyen, la hauteur d’habitation moyenne… Cette étude nous permettra de construire un modèle assez réaliste avec lequel il nous sera facile d’isoler des facteurs pour être sûr de prouver notre hypothèse.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Blog
 
-### Markdown
+Voici le travail que nous avons fais chaque semaine
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Description du projet
 
+Nous avons choisi de travailler sur des Matrices et d'utiliser le modèle de Burgess, la fonction city concentric nous permet de diviser notre matrice en plusieur cercles.
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+def cityConcentric(n,m, graph=False):
+    #len(matrice) >= 10
+    if n%2 == 0:
+        n=n+1
+        m=m+1
+    grid = np.zeros((n,m), dtype=int) 
+    rgrid = np.zeros((n,m), dtype=int) 
+    M = [n//2,n//2]
+        
+    circles = {}
+    for i in range(n//12,n//2,n//10):
+        circles[i] = [[M[0],M[1]],i]
+    
+    xx = np.arange(grid.shape[0])
+    yy = np.arange(grid.shape[1])
+    for val in circles.values():
+        radius = val[1]
+        inside = (xx[:, None] - val[0][0])**2 + (yy - val[0][1])**2 <= radius**2
+        grid = grid | inside
+        rgrid += grid
+    if graph:
+        """plt.imshow(rgrid)
+        plt.show()"""
+    return rgrid
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
