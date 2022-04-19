@@ -13,6 +13,8 @@
 
 ## Description synthétique du projet
 
+presentation: https://docs.google.com/presentation/d/1KCu4oYz8kRgkyEJ6lAGgNIvvfJgn0aNl3JWoC3AECOQ/edit?usp=sharing
+
 **Problématique :** Quels sont les caractéristiques principales d'un individu qui influent sur ses chances de survie lors d'un tremblement de terre en milieu urbain ? 
 
 **Hypothèse principale :** L'age et le niveau de richesse sont les facteurs les plus importants dans l'augmentation des chances de survie d'un individu lors d'un tremblement de terre en milieu urbain.
