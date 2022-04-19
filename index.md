@@ -43,17 +43,20 @@ voici le résultat de l'appel `cityConcentric(100,100, True)`:
     <figcaption>les couleurs correspondent à différentes valeurs de la matrice.</figcaption>
 <figure>
     
-----
+\
     
 Nous avons ensuite dispersé le modèle puis ajouté des routes ce qui nous donne cette matrice:
 <figure>
     <img width="25%" src="https://user-images.githubusercontent.com/99738357/163987097-18b26ca3-d949-4763-b044-11de04ba6406.png">
     <figcaption>les couleurs correspondent à différentes valeurs de la matrice.</figcaption>
 <figure>
-<br>
-----
+
+\
+    
 répatition des ondes
-----
+
+\
+    
 Pour évaluer le taux de survie, nous regardons une matrice d'age des batiments, de taille et de résitances (déterminer d'après notre adaptation du modèle de Burgess, nous avons supeposé ses matrices à celle de la répartition des ondes ce qui nous donne cette matrice
 ### Support or Contact
 
