@@ -36,16 +36,14 @@ def cityConcentric(n,m, graph=False):
     return rgrid
 ```
 
-
-
-
 voici le résultat de l'appel `cityConcentric(100,100, True)`: 
 
+<p align="center" width="100%">
+    <img width="33%" src="https://user-images.githubusercontent.com/99738357/163983314-b5af5387-a496-4715-94f9-5afcf9927ca8.png">
+</p>
 ![image](https://user-images.githubusercontent.com/99738357/163983314-b5af5387-a496-4715-94f9-5afcf9927ca8.png)
 
-
-### Jekyll Themes
-
+Nous avons ensuite assig
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/are-dynamic-2022-g3/Survive-an-earthquake/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
