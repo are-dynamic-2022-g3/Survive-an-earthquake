@@ -37,13 +37,12 @@ def cityConcentric(n,m, graph=False):
 ```
 
 voici le résultat de l'appel `cityConcentric(100,100, True)`: 
-
+les couleurs correspondent à différentes valeurs de la matrice.
 <p align="center" width="100%">
     <img width="25%" src="https://user-images.githubusercontent.com/99738357/163983314-b5af5387-a496-4715-94f9-5afcf9927ca8.png">
 </p>
 
-Nous avons ensuite assig
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/are-dynamic-2022-g3/Survive-an-earthquake/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Nous avons ensuite dispersé le modèle puis ajouté des routes ce qui nous donne cette matrice
 
 ### Support or Contact
 
