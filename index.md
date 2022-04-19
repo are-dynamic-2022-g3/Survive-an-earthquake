@@ -38,9 +38,9 @@ def cityConcentric(n,m, graph=False):
 
 voici le résultat de l'appel `cityConcentric(100,100, True)`: 
 
-<p align="left" width="100%">
+<p align="middle" width="100%">
     <img width="25%" src="https://user-images.githubusercontent.com/99738357/163983314-b5af5387-a496-4715-94f9-5afcf9927ca8.png">
-    <em>les couleurs correspondent à différentes valeurs de la matrice.</em>
+    <figcaption>les couleurs correspondent à différentes valeurs de la matrice.</figcaption>
 </p>
 
 Nous avons ensuite dispersé le modèle puis ajouté des routes ce qui nous donne cette matrice
