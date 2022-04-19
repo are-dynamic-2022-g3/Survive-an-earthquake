@@ -9,7 +9,7 @@ Voici le travail que nous avons fais chaque semaine
 ### Description du projet
 
 Nous avons choisi de travailler sur des Matrices et d'utiliser le modèle de Burgess, la fonction city concentric nous permet de diviser notre matrice en plusieur cercles.
-```markdown
+```py
 def cityConcentric(n,m, graph=False):
     #len(matrice) >= 10
     if n%2 == 0:
