@@ -31,10 +31,12 @@ def cityConcentric(n,m, graph=False):
         grid = grid | inside
         rgrid += grid
     if graph:
-        """plt.imshow(rgrid)
-        plt.show()"""
+        plt.imshow(rgrid)
+        plt.show()
     return rgrid
 ```
+
+voici le résultat de l'appel `cityConcentric(100,100, True)`: ![image](https://user-images.githubusercontent.com/99738357/163983314-b5af5387-a496-4715-94f9-5afcf9927ca8.png)
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
