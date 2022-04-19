@@ -51,7 +51,10 @@ Nous avons ensuite dispersé le modèle puis ajouté des routes ce qui nous donn
     <figcaption>les couleurs correspondent à différentes valeurs de la matrice.</figcaption>
 <figure>
 <br>
-
+----
+répatition des ondes
+----
+Pour évaluer le taux de survie, nous regardons une matrice d'age des batiments, de taille et de résitances (déterminer d'après notre adaptation du modèle de Burgess, nous avons supeposé ses matrices à celle de la répartition des ondes ce qui nous donne cette matrice
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
