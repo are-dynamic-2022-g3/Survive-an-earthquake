@@ -4,7 +4,7 @@
 
 ### Blog
 
-Voici le travail que nous avons fais chaque semaine
+Voici le travail que nous avons fais chaque semaine: [Blog](https://github.com/are-dynamic-2022-g3/Survive-an-earthquake/blob/main/blog.md)
 
 ### Description du projet
 
