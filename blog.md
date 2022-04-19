@@ -55,4 +55,7 @@ Graphique du taux de survie non-moyenné et moyenné des victimes en fonction de
 
 
 
+![image](https://user-images.githubusercontent.com/99736848/163983207-e35a63e2-1acd-4334-a85c-652a02498c89.png)
+
+
 
